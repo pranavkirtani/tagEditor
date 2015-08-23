@@ -1,0 +1,15 @@
+<div ng-repeat="tab in tabs track by tab._id" class="tabList">
+    <div class="close" onclick="removeTag(event)">X</div>
+    {{tab.text}}
+    <div class="edit_button_container">
+    <input type="button" value="Edit" data-id={{tab._id}} data-text={{tab.text}}  class="edit_button" onclick=editTab(event) />
+        <input class="edit_text" type="text"  data-id='+success_data._id+' onkeydown="updateTab(event)"  maxlength=10 style="display:none"/>
+    </div>
+    
+</div>
+<span ng-click="createTab()" class="newTab">
+    <div class="plus">
+    +
+    </div>
+
+</span>

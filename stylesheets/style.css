@@ -1,0 +1,62 @@
+.newTab {
+    background-color: #dc6016;
+    color: #ffffff;
+    display: inline-block;
+    font-size: 21px;
+    height: 26%;
+    line-height: 6;
+    margin: 2%;
+    text-align: center;
+    vertical-align: middle;
+    width: 14%;
+}
+.plus {
+    background-color: yellowgreen;
+    font-size: 92px;
+    height: 44%;
+    line-height: 79%;
+    margin: 18% auto 0;
+    vertical-align: middle;
+    width: 43%;
+}
+.tabList {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: aquamarine;
+    color: #FFFFFF;
+    width: 14%;
+    height: 26%;
+    /* padding: 7%; */
+    margin: 2%;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 6;
+    font-size: 21px;
+}
+
+.tagContainer{
+    background-color: gray;
+    width: 100%;
+    height: 100%;
+}
+input.edit_text {
+    width: 50%;
+    height: 25%;
+    margin-top: 34%;
+    color:#000000;
+    
+}
+.edit_button {
+    height: 28%;
+    width: 65%;
+    margin-top: -24%;
+    background-color: yellowgreen;
+    font-size: 19px;
+    line-height: 2px;
+    border-radius: 26px;
+}
+
+.edit_button_container{
+
+}
