@@ -3,15 +3,15 @@ var tabs=require('./database/model');
 var bodyParser=require('body-parser');
 var app=express();
 var path = require('path');
-app.use(bodyParser.urlencoded({ extended: false }))
+app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
 app.get('/tabs',function(req,res){
-    var query={}
+    var query={};
 tabs.find(query,function(err,results){
     res.json(results);
-})
+});
 });
 app.get('/tabs/:tabId',function(req,res){
     var query={'_id':req.params.tabId};
@@ -21,7 +21,7 @@ app.get('/tabs/:tabId',function(req,res){
         return;
      }
     res.json(results);
-})
+});
 });
 app.post('/tab',function(req,res){
 
@@ -34,7 +34,7 @@ app.post('/tab',function(req,res){
          return;
      }
         res.json(result);
-    })
+    });
     
 
 });
@@ -54,7 +54,7 @@ app.put('/tab/:tabId',function(req,res){
             }
             res.json(tab);
         
-        })
+        });
         
         
         
@@ -72,12 +72,12 @@ app.get('/tabs',function(req,res){
         return;
      }
     res.json(results);
-})
+});
     
 
 });
 app.get('/',function(req,res){
- res.sendFile(__dirname+'/views/index.html')
+ res.sendFile(__dirname+'/views/index.html');
 });
 
 

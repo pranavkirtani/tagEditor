@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha test"
   },
   "author": "pranav",
   "license": "ISC",
@@ -12,5 +12,8 @@
     "express": "^4.13.3",
     "hbs": "^3.1.0",
     "mongoose": "^4.1.3"
+  },
+  "devDependencies": {
+    "jshint": "^2.8.0"
   }
 }
